@@ -1,0 +1,2241 @@
+<!DOCTYPE html>
+<html lang="en" data-critters-container>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <meta charset="utf-8">
+        <title>Home Page</title>
+        <base href="/">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <meta name="description" content>
+        <meta property="og:title" content="IndiConnect-Branchless Banking">
+        <meta property="og:description" content="Seamless Transactions, Empowering Business and Personal Finance">
+        <meta property="og:image" content="assets/newLogoResize.png">
+        <meta property="og:url" content="">
+        <link rel="icon" type="image/x-icon" href="assets/icon/fevicon.png">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+        <link rel="stylesheet" href="assets/styles.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>
+            @font-face {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+                unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+                unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+                unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+                unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            @font-face {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nErXyi0A.woff2) format('woff2');
+                unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0898-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EFD-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+            }
+
+            @font-face {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nMrXyi0A.woff2) format('woff2');
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+
+            @font-face {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nFrXyi0A.woff2) format('woff2');
+                unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+
+            @font-face {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nDrXyi0A.woff2) format('woff2');
+                unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+            }
+
+            @font-face {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nPrXyi0A.woff2) format('woff2');
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            @font-face {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nBrXw.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            @font-face {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 500;
+                src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nErXyi0A.woff2) format('woff2');
+                unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0898-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EFD-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+            }
+
+            @font-face {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 500;
+                src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nMrXyi0A.woff2) format('woff2');
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+
+            @font-face {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 500;
+                src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nFrXyi0A.woff2) format('woff2');
+                unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+
+            @font-face {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 500;
+                src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nDrXyi0A.woff2) format('woff2');
+                unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+            }
+
+            @font-face {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 500;
+                src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nPrXyi0A.woff2) format('woff2');
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            @font-face {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 500;
+                src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nBrXw.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            @font-face {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 700;
+                src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nErXyi0A.woff2) format('woff2');
+                unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0898-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EFD-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+            }
+
+            @font-face {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 700;
+                src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nMrXyi0A.woff2) format('woff2');
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+
+            @font-face {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 700;
+                src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nFrXyi0A.woff2) format('woff2');
+                unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+
+            @font-face {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 700;
+                src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nDrXyi0A.woff2) format('woff2');
+                unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+            }
+
+            @font-face {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 700;
+                src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nPrXyi0A.woff2) format('woff2');
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            @font-face {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 700;
+                src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nBrXw.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" async>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWiYehcwyLE9YNHfAe8LsIitlvUc6L0Hc"></script>
+        <style>
+            body {
+                margin: 0;
+                font-family: Montserrat,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif!important;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #25020d;
+                text-align: left;
+                background-color: #fff
+            }
+
+            .fw-400 {
+                font-weight: 400!important
+            }
+
+            .fw-500 {
+                font-weight: 500!important
+            }
+
+            .fw-600 {
+                font-weight: 600!important
+            }
+
+            .fw-700 {
+                font-weight: 700!important
+            }
+
+            .fs-14 {
+                font-size: 14px!important
+            }
+
+            .fs-15 {
+                font-size: 15px!important
+            }
+
+            .fs-16 {
+                font-size: 16px!important
+            }
+
+            .fs-18 {
+                font-size: 18px!important
+            }
+
+            .fs-19 {
+                font-size: 19px!important
+            }
+
+            .fs-20 {
+                font-size: 20px!important
+            }
+
+            .fs-22 {
+                font-size: 22px!important
+            }
+
+            .fs-23 {
+                font-size: 23px!important
+            }
+
+            .br-11 {
+                border-radius: 11px!important
+            }
+
+            .lh-base {
+                line-height: 1.5!important
+            }
+
+            .ms-3 {
+                margin-left: 1rem!important
+            }
+
+            @media screen and (min-width: 967px) {
+                .ms-xl-5 {
+                    margin-left:3rem!important
+                }
+            }
+
+            @media screen and (min-width: 768px) {
+                .me-md-5 {
+                    margin-right:3rem!important
+                }
+            }
+
+            .bg-primary {
+                background-color: #fff!important
+            }
+
+            .text-muted {
+                color: #716b6b!important
+            }
+
+            .text-end {
+                text-align: right
+            }
+
+            .text-center {
+                text-align: center!important
+            }
+
+            h5 {
+                line-height: 1.3!important
+            }
+
+            p {
+                line-height: 1.4!important
+            }
+
+            .cursor-pointer {
+                cursor: pointer!important
+            }
+
+            .bg-light {
+                background-color: #fafafa!important
+            }
+
+            .btn-white {
+                background: #fff!important
+            }
+
+            .text-overflow {
+                height: 87px!important;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 4;
+                overflow: hidden
+            }
+
+            .btn-primary:hover {
+                color: #fff;
+                background-color: #fff!important;
+                border-color: #fff!important
+            }
+
+            .nav-item a {
+                color: #fff
+            }
+
+            .apple-playstore {
+                max-height: 50px
+            }
+
+            .icons-image {
+                max-height: 20px;
+                cursor: pointer
+            }
+
+            .fifth-image-set {
+                max-height: 450px
+            }
+
+            .card-1 {
+                width: 417px
+            }
+
+            .stap-round {
+                padding: 11px 18px
+            }
+
+            .stap-round1 {
+                padding: 11px 18px!important
+            }
+
+            .dash-line:after {
+                content: "";
+                background: url("./media/dash-line-FSA3WXIM.svg");
+                position: absolute;
+                top: 8px;
+                width: 65%;
+                height: 3px;
+                left: 260px
+            }
+
+            .swiper-wrapper {
+                align-items: center!important
+            }
+
+            .swiper-wrapper .swiper-slide {
+                min-width: 100px!important
+            }
+
+            .filter-img {
+                filter: grayscale(100%)!important;
+                opacity: 70%!important;
+                width: 100%;
+                height: 40px;
+                object-fit: contain
+            }
+
+            .filter-img:hover {
+                filter: none!important
+            }
+
+            @media (max-width: 768px) {
+                .fifth-image-set {
+                    max-height:313px
+                }
+
+                .dash-line:after {
+                    display: none!important
+                }
+            }
+
+            @media (min-width: 768px) and (max-width: 900px) {
+                .dash-line:after {
+                    display:none!important
+                }
+            }
+
+            .img-fluid {
+                object-fit: contain!important;
+                object-position: center!important
+            }
+
+            .hover-card-div .card {
+                box-shadow: 0 2.87px 53.12px #0000000d!important;
+                transition: transform .5s;
+                cursor: pointer!important
+            }
+
+            .hover-card-div .card:after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: opacity 2s cubic-bezier(.165,.84,.44,1);
+                box-shadow: 0 8px 17px #0003,0 6px 20px #00000026;
+                content: "";
+                opacity: 0;
+                z-index: -1
+            }
+
+            .hover-card-div .card:hover,.hover-card-div .card:focus {
+                transform: scale3d(1.006,1.006,1)
+            }
+
+            .hover-card-div .card:hover:after,.hover-card-div .card:focus:after {
+                opacity: 1
+            }
+
+            @media (min-width: 0px) and (max-width: 767px) {
+                h1 {
+                    font-size:2rem!important
+                }
+            }
+        </style>
+        <link rel="stylesheet" href="styles-J4FYNE7L.css" media="print" onload="this.media='all'">
+        <noscript>
+            <link rel="stylesheet" href="styles-J4FYNE7L.css">
+        </noscript>
+        <link rel="modulepreload" href="chunk-3PRZUNEH.js">
+        <link rel="modulepreload" href="chunk-M2QFPAIX.js">
+        <link rel="modulepreload" href="chunk-A7WMZAFQ.js">
+        <style ng-app-id="ng">
+            .padding-0[_ngcontent-ng-c4214895665] {
+                padding: 0!important
+            }
+
+            .navbar[_ngcontent-ng-c4214895665] {
+                box-shadow: 0 4px 21px #0000001a
+            }
+
+            .nav-pills[_ngcontent-ng-c4214895665] .nav-link[_ngcontent-ng-c4214895665] {
+                background: 0 0;
+                border: 0!important;
+                border-radius: var(--bs-nav-pills-border-radius)
+            }
+
+            .text-primary[_ngcontent-ng-c4214895665] {
+                color: #0d0e0d!important
+            }
+
+            .header-logo[_ngcontent-ng-c4214895665] {
+                height: 75px
+            }
+
+            .ccsticky-nav[_ngcontent-ng-c4214895665] {
+                width: 100%;
+                height: 93px;
+                position: fixed;
+                top: 0;
+                background: #fff
+            }
+
+            .ccsticky-nav[_ngcontent-ng-c4214895665] ul[_ngcontent-ng-c4214895665] {
+                padding: 20px;
+                margin: 0 auto;
+                list-style: none;
+                text-align: center
+            }
+
+            .popover__title[_ngcontent-ng-c4214895665] {
+                font-size: 24px;
+                line-height: 36px;
+                text-decoration: none;
+                color: #e44444;
+                text-align: center;
+                padding: 15px 0
+            }
+
+            .popover__wrapper[_ngcontent-ng-c4214895665] {
+                position: relative;
+                display: inline-block
+            }
+
+            .popover__content[_ngcontent-ng-c4214895665] {
+                border-radius: 15px;
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+                left: -350px;
+                top: calc(100% + 10px);
+                background-color: #fff;
+                padding: 1.5rem;
+                box-shadow: 0 2px 5px #00000042;
+                width: 1000px;
+                z-index: 10;
+                transition: all .5s cubic-bezier(.75,-.02,.2,.97)
+            }
+
+            .popover__content[_ngcontent-ng-c4214895665]:before {
+                position: absolute;
+                z-index: -1;
+                right: calc(50% - 10px);
+                top: -8px;
+                border-style: solid;
+                border-width: 0 10px 10px 10px;
+                border-color: transparent transparent white transparent;
+                transition-duration: .3s;
+                transition-property: transform
+            }
+
+            .popover__wrapper[_ngcontent-ng-c4214895665]:hover .popover__content[_ngcontent-ng-c4214895665] {
+                z-index: 10;
+                opacity: 1;
+                visibility: visible;
+                transition: all .5s cubic-bezier(.75,-.02,.2,.97)
+            }
+
+            .popover__message[_ngcontent-ng-c4214895665] {
+                text-align: center
+            }
+
+            .p-header[_ngcontent-ng-c4214895665] {
+                font-size: 14px;
+                white-space: initial;
+                font-weight: 400;
+                margin-bottom: 0
+            }
+
+            .bg-hover[_ngcontent-ng-c4214895665]:hover {
+                background-color: #f0f8ff
+            }
+
+            .padding-x-83[_ngcontent-ng-c4214895665] {
+                padding: 0 83px
+            }
+
+            @media (min-width: 0px) and (max-width: 768px) {
+                .padding-x-83[_ngcontent-ng-c4214895665] {
+                    padding:0 20px!important
+                }
+
+                .popover__content[_ngcontent-ng-c4214895665] {
+                    left: -110px;
+                    width: 300px
+                }
+
+                .popover__content.popover_sm_content[_ngcontent-ng-c4214895665] {
+                    left: -66px;
+                    width: 300px
+                }
+
+                .popover__content.popover_sm_res_content[_ngcontent-ng-c4214895665] {
+                    left: -102px;
+                    width: 300px
+                }
+
+                .scroll-content[_ngcontent-ng-c4214895665] {
+                    height: 50vh;
+                    overflow-y: scroll;
+                    overflow-x: hidden
+                }
+            }
+
+            @media (min-width: 768px) and (max-width: 991.98px) {
+                .padding-x-83[_ngcontent-ng-c4214895665] {
+                    padding:0 25px!important
+                }
+
+                .popover__content[_ngcontent-ng-c4214895665] {
+                    left: -204px;
+                    width: 500px
+                }
+
+                .popover__content.popover_sm_content[_ngcontent-ng-c4214895665] {
+                    left: -161px;
+                    width: 500px
+                }
+
+                .popover__content.popover_sm_res_content[_ngcontent-ng-c4214895665] {
+                    left: -199px;
+                    width: 500px
+                }
+            }
+
+            @media (max-width: 991.98px) {
+                .sm-navbar-set[_ngcontent-ng-c4214895665] {
+                    background-color:#fff!important;
+                    text-align: center!important;
+                    padding: 20px 0
+                }
+
+                .sm-navbar-set[_ngcontent-ng-c4214895665] ul[_ngcontent-ng-c4214895665] {
+                    display: flex;
+                    padding: 0!important
+                }
+
+                .sm-navbar-set[_ngcontent-ng-c4214895665] ul[_ngcontent-ng-c4214895665] .nav-link[_ngcontent-ng-c4214895665] {
+                    color: #fff!important
+                }
+
+                .sm-navbar-set[_ngcontent-ng-c4214895665] .btn-primary[_ngcontent-ng-c4214895665] {
+                    background-color: #fff!important;
+                    border-color: #fff!important
+                }
+            }
+
+            @media (min-width: 991.98px) and (max-width: 1022px) {
+                .padding-x-83[_ngcontent-ng-c4214895665] {
+                    padding:0!important
+                }
+            }
+
+            [_ngcontent-ng-c4214895665]::-webkit-scrollbar {
+                width: 0!important
+            }
+
+            [_ngcontent-ng-c4214895665]::-webkit-scrollbar-track {
+                display: none!important
+            }
+
+            [_ngcontent-ng-c4214895665]::-webkit-scrollbar-thumb {
+                display: none!important
+            }
+
+            [_ngcontent-ng-c4214895665]::-webkit-scrollbar-corner {
+                display: none!important
+            }
+        </style>
+        <style ng-app-id="ng">
+            .logo[_ngcontent-ng-c3174313655] {
+                height: 72px;
+                width: 200px;
+                margin-right: 30px
+            }
+
+            .logo-back[_ngcontent-ng-c3174313655] {
+                height: 30px
+            }
+
+            .footer-logo[_ngcontent-ng-c3174313655] {
+                height: 65px
+            }
+
+            .social_icon[_ngcontent-ng-c3174313655] {
+                height: 35px;
+                width: 35px;
+                background-color: #ea4e0d;
+                border-radius: 100%
+            }
+
+            @media (max-width: 768px) {
+                .logo-back[_ngcontent-ng-c3174313655] {
+                    height:33px
+                }
+            }
+
+            @media only screen and (max-width: 900px) {
+                .footer-logo[_ngcontent-ng-c3174313655] {
+                    width:150px;
+                    height: 100px
+                }
+            }
+
+            .copyright[_ngcontent-ng-c3174313655] a[_ngcontent-ng-c3174313655] {
+                color: #dbdee5db!important;
+                text-decoration: none;
+                background-color: transparent
+            }
+        </style>
+        <style ng-app-id="ng">
+            .btn-width[_ngcontent-ng-c2159516009] {
+                width: 30vh
+            }
+
+            .home-container-first[_ngcontent-ng-c2159516009] .top-first-image[_ngcontent-ng-c2159516009] {
+                max-height: 350px
+            }
+
+            .second-right-image[_ngcontent-ng-c2159516009] {
+                max-height: 571px;
+                min-width: 635px
+            }
+
+            .top-third-div[_ngcontent-ng-c2159516009] .round-squre-image[_ngcontent-ng-c2159516009] {
+                max-height: 350px!important
+            }
+
+            .top-third-div[_ngcontent-ng-c2159516009] .second-img[_ngcontent-ng-c2159516009] {
+                position: absolute;
+                right: 208px;
+                margin-top: 31px!important;
+                max-height: 250px;
+                max-width: 100%
+            }
+
+            .main-card[_ngcontent-ng-c2159516009] {
+                width: 18rem;
+                box-shadow: 2px 2px 35px #0000000f!important
+            }
+
+            .btn-set[_ngcontent-ng-c2159516009] .py-2[_ngcontent-ng-c2159516009] {
+                padding-top: .9rem!important;
+                padding-bottom: .9rem!important
+            }
+
+            .card-div[_ngcontent-ng-c2159516009] .container[_ngcontent-ng-c2159516009] {
+                max-width: 1263px
+            }
+
+            @media (min-width: 0px) and (max-width: 767px) {
+                h1[_ngcontent-ng-c2159516009] {
+                    font-size:2.1rem!important
+                }
+
+                .fs-17[_ngcontent-ng-c2159516009] {
+                    font-size: 16px
+                }
+
+                .fs-20[_ngcontent-ng-c2159516009] {
+                    font-size: 18px
+                }
+
+                .top-third-div[_ngcontent-ng-c2159516009] .round-squre-image[_ngcontent-ng-c2159516009] {
+                    height: 235px!important
+                }
+
+                .top-third-div[_ngcontent-ng-c2159516009] .second-img[_ngcontent-ng-c2159516009] {
+                    right: -22px!important;
+                    height: 170px;
+                    width: 372px;
+                    top: 63px
+                }
+
+                .home-container-first[_ngcontent-ng-c2159516009] .seamless-emp[_ngcontent-ng-c2159516009] {
+                    font-size: 18px!important
+                }
+
+                .second-right-image[_ngcontent-ng-c2159516009] {
+                    max-height: 351px!important;
+                    min-width: 0px!important;
+                    justify-content: center;
+                    display: flex
+                }
+
+                .main-card[_ngcontent-ng-c2159516009] {
+                    width: 100%;
+                    box-shadow: 2px 2px 35px #0000000f!important
+                }
+            }
+
+            @media (min-width: 768px) and (max-width: 900px) {
+                .top-third-div[_ngcontent-ng-c2159516009] .round-squre-image[_ngcontent-ng-c2159516009] {
+                    max-height:380px!important
+                }
+
+                .top-third-div[_ngcontent-ng-c2159516009] .second-img[_ngcontent-ng-c2159516009] {
+                    position: absolute;
+                    right: 78px!important;
+                    margin-top: 25px!important;
+                    max-height: 292px;
+                    max-width: 100%
+                }
+
+                .main-card[_ngcontent-ng-c2159516009] {
+                    width: auto!important
+                }
+            }
+
+            .card-swiper[_ngcontent-ng-c2159516009] {
+                position: relative;
+                height: 550px!important;
+                overflow: hidden;
+                cursor: pointer
+            }
+
+            .card-swiper[_ngcontent-ng-c2159516009] .swiper[_ngcontent-ng-c2159516009] {
+                width: 100%;
+                height: 100%
+            }
+
+            .card-swiper[_ngcontent-ng-c2159516009] .swiper-slide[_ngcontent-ng-c2159516009] {
+                background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 40px 80px
+            }
+
+            .card-swiper[_ngcontent-ng-c2159516009] .swiper-slide[_ngcontent-ng-c2159516009] .custom-hover-card[_ngcontent-ng-c2159516009] {
+                width: 350px;
+                min-height: 450px;
+                background-color: #fff!important;
+                background-repeat: no-repeat;
+                background-size: 70%;
+                background-position: 50% 25%;
+                box-shadow: 0 0 8px 4px #192a461c!important
+            }
+
+            .card-swiper[_ngcontent-ng-c2159516009] .swiper-slide[_ngcontent-ng-c2159516009] .custom-hover-card[_ngcontent-ng-c2159516009] .card-header[_ngcontent-ng-c2159516009] {
+                background-color: #f77e17!important
+            }
+
+            .card-swiper[_ngcontent-ng-c2159516009] .swiper-slide[_ngcontent-ng-c2159516009] .custom-hover-card[_ngcontent-ng-c2159516009] .card-body[_ngcontent-ng-c2159516009] {
+                background-color: #ebf4ff!important;
+                transform: translateY(68%)
+            }
+
+            .mobile-swiper[_ngcontent-ng-c2159516009] .swiper-slide[_ngcontent-ng-c2159516009] {
+                padding: 0!important
+            }
+
+            .custom-hover-card[_ngcontent-ng-c2159516009] .card-body[_ngcontent-ng-c2159516009] {
+                transform: translateY(20px);
+                transition: opacity .3s ease,transform .3s ease
+            }
+
+            .custom-hover-card[_ngcontent-ng-c2159516009]:hover .card-body[_ngcontent-ng-c2159516009] {
+                transform: translateY(70%)!important
+            }
+
+            .custom-hover-card[_ngcontent-ng-c2159516009]:hover .card-body[_ngcontent-ng-c2159516009] .description-text-mpc[_ngcontent-ng-c2159516009] {
+                padding-bottom: 10px!important
+            }
+
+            .added-custom-width[_ngcontent-ng-c2159516009] {
+                width: 600px!important
+            }
+        </style>
+        <style ng-app-id="ng">
+            .mySwiperRB[_ngcontent-ng-c3722189711] {
+                width: 100vw!important;
+                overflow: hidden!important
+            }
+        </style>
+        <meta name="og:title" content="Home Page">
+        <meta name="og:description" content="Seamless Transactions, Empowering Business and Personal Finance">
+    </head>
+    <body>
+        <!--nghm-->
+        <app-root _nghost-ng-c1232931054 ng-version="18.0.2" ngh="3" ng-server-context="ssg">
+            <app-navbar _ngcontent-ng-c1232931054 _nghost-ng-c4214895665 ngh="0">
+                <nav _ngcontent-ng-c4214895665 class="navbar navbar-expand-lg navbar-light ccsticky-nav padding-0">
+                    <div _ngcontent-ng-c4214895665 class="container-fluid mx-2 mx-lg-5 padding-x-83 sm-mt-5">
+                        <div _ngcontent-ng-c4214895665 class="d-flex justify-content-center cursor-pointer">
+                            <a _ngcontent-ng-c4214895665 href="/home.html">
+                                <img _ngcontent-ng-c4214895665 loading="lazy" alt="Sphere Pay Logo" src="assets/images/header-image/indicolorlogo.svg" class="header-logo img-fluid">
+                            </a>
+                        </div>
+                        <button _ngcontent-ng-c4214895665 type="button" id="toggle-close" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+                            <span _ngcontent-ng-c4214895665 class="navbar-toggler-icon"></span>
+                        </button>
+                        <div _ngcontent-ng-c4214895665 id="navbarSupportedContent" class="collapse navbar-collapse sm-navbar-set">
+                            <ul _ngcontent-ng-c4214895665 class="navbar-nav me-auto mb-2 mb-lg-0 fs-18 fw-600 pr-0 mr-0">
+                                <li _ngcontent-ng-c4214895665 class="nav-item">
+                                    <div _ngcontent-ng-c4214895665 class="popover__wrapper">
+                                        <a _ngcontent-ng-c4214895665 class="nav-link text-primary ml-md-2 ml-lg-3 ms-xl-5" href="/home-sme.html">Banking </a>
+                                        <div _ngcontent-ng-c4214895665 class="popover__content">
+                                            <div _ngcontent-ng-c4214895665 id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" class="tab-pane fade active show text-left scroll-content">
+                                                <div _ngcontent-ng-c4214895665 class="row">
+                                                    <div _ngcontent-ng-c4214895665 class="col-lg-4 mt-2 bg-hover">
+                                                        <a _ngcontent-ng-c4214895665 href="/current-account.html">
+                                                            <div _ngcontent-ng-c4214895665 class="row my-2">
+                                                                <div _ngcontent-ng-c4214895665 class="col-2 col-md-2">
+                                                                    <img _ngcontent-ng-c4214895665 loading="lazy" alt="Navbar Icon" src="assets/images/header-image/current-account_pop.svg">
+                                                                </div>
+                                                                <div _ngcontent-ng-c4214895665 class="col-10 col-md-10">
+                                                                    <h4 _ngcontent-ng-c4214895665 class="fs-14 m-0 fw-600">Current Account</h4>
+                                                                    <p _ngcontent-ng-c4214895665 class="p-header">Accept payments on Website or APP</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c4214895665 class="col-lg-4 mt-2 bg-hover">
+                                                        <a _ngcontent-ng-c4214895665 href="/multibank-account.html">
+                                                            <div _ngcontent-ng-c4214895665 class="row my-2">
+                                                                <div _ngcontent-ng-c4214895665 class="col-2 col-md-2">
+                                                                    <img _ngcontent-ng-c4214895665 loading="lazy" alt="Navbar Icon" src="assets/images/header-image/multibank_pop.svg">
+                                                                </div>
+                                                                <div _ngcontent-ng-c4214895665 class="col-10 col-md-10">
+                                                                    <h4 _ngcontent-ng-c4214895665 class="fs-14 m-0 fw-600">Multibank Connect</h4>
+                                                                    <p _ngcontent-ng-c4214895665 class="p-header">Accept payments on Website or APP</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c4214895665 class="col-lg-4 mt-2 bg-hover">
+                                                        <a _ngcontent-ng-c4214895665 href="/virtual-account.html">
+                                                            <div _ngcontent-ng-c4214895665 class="row my-2">
+                                                                <div _ngcontent-ng-c4214895665 class="col-2 col-md-2">
+                                                                    <img _ngcontent-ng-c4214895665 loading="lazy" alt="Navbar Icon" src="assets/images/header-image/virtual-account_pop.svg">
+                                                                </div>
+                                                                <div _ngcontent-ng-c4214895665 class="col-10 col-md-10">
+                                                                    <h4 _ngcontent-ng-c4214895665 class="fs-14 m-0 fw-600">Virtual Account</h4>
+                                                                    <p _ngcontent-ng-c4214895665 class="p-header">Accept payments on Website or APP</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div _ngcontent-ng-c4214895665 class="row mt-md-2">
+                                                    <div _ngcontent-ng-c4214895665 class="col-lg-4 mt-2 bg-hover">
+                                                        <a _ngcontent-ng-c4214895665 href="/pay-out.html">
+                                                            <div _ngcontent-ng-c4214895665 class="row my-2">
+                                                                <div _ngcontent-ng-c4214895665 class="col-2 col-md-2">
+                                                                    <img _ngcontent-ng-c4214895665 loading="lazy" alt="Navbar Icon" src="assets/images/header-image/payouts_pop.svg">
+                                                                </div>
+                                                                <div _ngcontent-ng-c4214895665 class="col-10 col-md-10">
+                                                                    <h4 _ngcontent-ng-c4214895665 class="fs-14 m-0 fw-600">Payouts</h4>
+                                                                    <p _ngcontent-ng-c4214895665 class="p-header">Accept payments on Website or APP</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c4214895665 class="col-lg-4 mt-2 bg-hover">
+                                                        <a _ngcontent-ng-c4214895665 href="/upi-direct.html">
+                                                            <div _ngcontent-ng-c4214895665 class="row my-2">
+                                                                <div _ngcontent-ng-c4214895665 class="col-2 col-md-2">
+                                                                    <img _ngcontent-ng-c4214895665 loading="lazy" alt="Navbar Icon" src="assets/images/header-image/corporate-card_pop.svg">
+                                                                </div>
+                                                                <div _ngcontent-ng-c4214895665 class="col-10 col-md-10">
+                                                                    <h4 _ngcontent-ng-c4214895665 class="fs-14 m-0 fw-600">UPI Direct</h4>
+                                                                    <p _ngcontent-ng-c4214895665 class="p-header">Accept payments on Website or APP</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c4214895665 class="col-lg-4 mt-2 bg-hover">
+                                                        <a _ngcontent-ng-c4214895665 href="/coming-soon.html">
+                                                            <div _ngcontent-ng-c4214895665 class="row my-2">
+                                                                <div _ngcontent-ng-c4214895665 class="col-2 col-md-2">
+                                                                    <img _ngcontent-ng-c4214895665 loading="lazy" alt="Navbar Icon" src="assets/images/header-image/cash-management.svg">
+                                                                </div>
+                                                                <div _ngcontent-ng-c4214895665 class="col-10 col-md-10">
+                                                                    <h4 _ngcontent-ng-c4214895665 class="fs-14 m-0 fw-600">IndiGram</h4>
+                                                                    <p _ngcontent-ng-c4214895665 class="p-header">Accept payments on Website or APP</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li _ngcontent-ng-c4214895665 class="nav-item">
+                                    <div _ngcontent-ng-c4214895665 class="popover__wrapper">
+                                        <a _ngcontent-ng-c4214895665 class="nav-link text-primary ml-md-2 ml-lg-3 ms-xl-5" href="/home.html">Payment Gateway</a>
+                                        <div _ngcontent-ng-c4214895665 class="popover__content popover_sm_content">
+                                            <div _ngcontent-ng-c4214895665 id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" class="tab-pane fade active show text-left scroll-content">
+                                                <div _ngcontent-ng-c4214895665 class="row">
+                                                    <div _ngcontent-ng-c4214895665 class="col-lg-4 mt-2 bg-hover bg-hover">
+                                                        <a _ngcontent-ng-c4214895665 href="/payment-gateway.html">
+                                                            <div _ngcontent-ng-c4214895665 class="row my-2">
+                                                                <div _ngcontent-ng-c4214895665 class="col-2 col-md-2">
+                                                                    <img _ngcontent-ng-c4214895665 loading="lazy" alt="Navbar Icon" src="assets/images/header-image/payment-gateway_pg.svg">
+                                                                </div>
+                                                                <div _ngcontent-ng-c4214895665 class="col-10 col-md-10">
+                                                                    <h4 _ngcontent-ng-c4214895665 class="fs-14 m-0 fw-600">Payment Gateway</h4>
+                                                                    <p _ngcontent-ng-c4214895665 class="p-header">Accept payments on Website or APP</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c4214895665 class="col-lg-4 mt-2 bg-hover">
+                                                        <a _ngcontent-ng-c4214895665 href="/payment-links.html">
+                                                            <div _ngcontent-ng-c4214895665 class="row my-2">
+                                                                <div _ngcontent-ng-c4214895665 class="col-2 col-md-2">
+                                                                    <img _ngcontent-ng-c4214895665 loading="lazy" alt="Navbar Icon" src="assets/images/header-image/payment-link_pg.svg">
+                                                                </div>
+                                                                <div _ngcontent-ng-c4214895665 class="col-10 col-md-10">
+                                                                    <h4 _ngcontent-ng-c4214895665 class="fs-14 m-0 fw-600">Payment Links</h4>
+                                                                    <p _ngcontent-ng-c4214895665 class="p-header">Accept payments on Website or APP</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c4214895665 class="col-lg-4 mt-2 bg-hover">
+                                                        <a _ngcontent-ng-c4214895665 href="/payment-button.html">
+                                                            <div _ngcontent-ng-c4214895665 class="row my-2">
+                                                                <div _ngcontent-ng-c4214895665 class="col-2 col-md-2">
+                                                                    <img _ngcontent-ng-c4214895665 loading="lazy" alt="Navbar Icon" src="assets/images/header-image/payment-button_pg.svg">
+                                                                </div>
+                                                                <div _ngcontent-ng-c4214895665 class="col-10 col-md-10">
+                                                                    <h4 _ngcontent-ng-c4214895665 class="fs-14 m-0 fw-600">Payment Button</h4>
+                                                                    <p _ngcontent-ng-c4214895665 class="p-header">Accept payments on Website or APP</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div _ngcontent-ng-c4214895665 class="row mt-md-2">
+                                                    <div _ngcontent-ng-c4214895665 class="col-lg-4 mt-2 bg-hover">
+                                                        <a _ngcontent-ng-c4214895665 href="/recurring-upi.html">
+                                                            <div _ngcontent-ng-c4214895665 class="row my-2">
+                                                                <div _ngcontent-ng-c4214895665 class="col-2 col-md-2">
+                                                                    <img _ngcontent-ng-c4214895665 loading="lazy" alt="Navbar Icon" src="assets/images/header-image/upi-autopay_pg.svg">
+                                                                </div>
+                                                                <div _ngcontent-ng-c4214895665 class="col-10 col-md-10">
+                                                                    <h4 _ngcontent-ng-c4214895665 class="fs-14 m-0 fw-600">Recurring Payments - UPI</h4>
+                                                                    <p _ngcontent-ng-c4214895665 class="p-header">Accept payments on Website or APP</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c4214895665 class="col-lg-4 mt-2 bg-hover">
+                                                        <a _ngcontent-ng-c4214895665 href="/coming-soon.html">
+                                                            <div _ngcontent-ng-c4214895665 class="row my-2">
+                                                                <div _ngcontent-ng-c4214895665 class="col-2 col-md-2">
+                                                                    <img _ngcontent-ng-c4214895665 loading="lazy" alt="Navbar Icon" src="assets/images/header-image/instant-settlement_pg.svg">
+                                                                </div>
+                                                                <div _ngcontent-ng-c4214895665 class="col-10 col-md-10">
+                                                                    <h4 _ngcontent-ng-c4214895665 class="fs-14 m-0 fw-600">eNach</h4>
+                                                                    <p _ngcontent-ng-c4214895665 class="p-header">Accept payments on Website or APP</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c4214895665 class="col-lg-4 mt-2 bg-hover">
+                                                        <a _ngcontent-ng-c4214895665 href="/international-payment-gateway.html">
+                                                            <div _ngcontent-ng-c4214895665 class="row my-2">
+                                                                <div _ngcontent-ng-c4214895665 class="col-2 col-md-2">
+                                                                    <img _ngcontent-ng-c4214895665 loading="lazy" alt="Navbar Icon" src="assets/images/header-image/instant-settlement_pg.svg">
+                                                                </div>
+                                                                <div _ngcontent-ng-c4214895665 class="col-10 col-md-10">
+                                                                    <h4 _ngcontent-ng-c4214895665 class="fs-14 m-0 fw-600">International Payment Gateway</h4>
+                                                                    <p _ngcontent-ng-c4214895665 class="p-header">Accept payments on Website or APP</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li _ngcontent-ng-c4214895665 class="nav-item">
+                                    <div _ngcontent-ng-c4214895665 class="popover__wrapper">
+                                        <a _ngcontent-ng-c4214895665 class="nav-link text-primary ml-md-2 ml-lg-3 ms-xl-5">BizStack</a>
+                                        <div _ngcontent-ng-c4214895665 class="popover__content">
+                                            <div _ngcontent-ng-c4214895665 id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" class="tab-pane fade active show text-left scroll-content">
+                                                <div _ngcontent-ng-c4214895665 class="row">
+                                                    <div _ngcontent-ng-c4214895665 class="col-lg-4 mt-2 bg-hover">
+                                                        <a _ngcontent-ng-c4214895665 href="/verification-services.html">
+                                                            <div _ngcontent-ng-c4214895665 class="row my-2">
+                                                                <div _ngcontent-ng-c4214895665 class="col-2 col-md-2">
+                                                                    <img _ngcontent-ng-c4214895665 loading="lazy" alt="Navbar Icon" src="assets/images/header-image/payment-gateway_pg.svg">
+                                                                </div>
+                                                                <div _ngcontent-ng-c4214895665 class="col-10 col-md-10">
+                                                                    <h4 _ngcontent-ng-c4214895665 class="fs-14 m-0 fw-600">Verification Services</h4>
+                                                                    <p _ngcontent-ng-c4214895665 class="p-header">Accept payments on Website or APP</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c4214895665 class="col-lg-4 mt-2 bg-hover">
+                                                        <a _ngcontent-ng-c4214895665 href="/payroll.html">
+                                                            <div _ngcontent-ng-c4214895665 class="row my-2">
+                                                                <div _ngcontent-ng-c4214895665 class="col-2 col-md-2">
+                                                                    <img _ngcontent-ng-c4214895665 loading="lazy" alt="Navbar Icon" src="assets/images/header-image/payment-link_pg.svg">
+                                                                </div>
+                                                                <div _ngcontent-ng-c4214895665 class="col-10 col-md-10">
+                                                                    <h4 _ngcontent-ng-c4214895665 class="fs-14 m-0 fw-600">Payroll</h4>
+                                                                    <p _ngcontent-ng-c4214895665 class="p-header">Accept payments on Website or APP</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c4214895665 class="col-lg-4 mt-2 bg-hover">
+                                                        <a _ngcontent-ng-c4214895665 href="/coming-soon.html">
+                                                            <div _ngcontent-ng-c4214895665 class="row my-2">
+                                                                <div _ngcontent-ng-c4214895665 class="col-2 col-md-2">
+                                                                    <img _ngcontent-ng-c4214895665 loading="lazy" alt="Navbar Icon" src="assets/images/header-image/upi-autopay_pg.svg">
+                                                                </div>
+                                                                <div _ngcontent-ng-c4214895665 class="col-10 col-md-10">
+                                                                    <h4 _ngcontent-ng-c4214895665 class="fs-14 m-0 fw-600">Expense Management</h4>
+                                                                    <p _ngcontent-ng-c4214895665 class="p-header">Accept payments on Website or APP</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div _ngcontent-ng-c4214895665 class="row mt-md-2">
+                                                    <div _ngcontent-ng-c4214895665 class="col-lg-4 mt-2 bg-hover">
+                                                        <a _ngcontent-ng-c4214895665 href="/tax-payments.html">
+                                                            <div _ngcontent-ng-c4214895665 class="row my-2">
+                                                                <div _ngcontent-ng-c4214895665 class="col-2 col-md-2">
+                                                                    <img _ngcontent-ng-c4214895665 loading="lazy" alt="Navbar Icon" src="assets/images/header-image/instant-settlement_pg.svg">
+                                                                </div>
+                                                                <div _ngcontent-ng-c4214895665 class="col-10 col-md-10">
+                                                                    <h4 _ngcontent-ng-c4214895665 class="fs-14 m-0 fw-600">TAX Payments</h4>
+                                                                    <p _ngcontent-ng-c4214895665 class="p-header">Accept payments on Website or APP</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c4214895665 class="col-lg-4 mt-2 bg-hover">
+                                                        <a _ngcontent-ng-c4214895665 href="/corporate-cards.html">
+                                                            <div _ngcontent-ng-c4214895665 class="row my-2">
+                                                                <div _ngcontent-ng-c4214895665 class="col-2 col-md-2">
+                                                                    <img _ngcontent-ng-c4214895665 loading="lazy" alt="Navbar Icon" src="assets/images/header-image/instant-settlement_pg.svg">
+                                                                </div>
+                                                                <div _ngcontent-ng-c4214895665 class="col-10 col-md-10">
+                                                                    <h4 _ngcontent-ng-c4214895665 class="fs-14 m-0 fw-600">Corporate Prepaid Cards</h4>
+                                                                    <p _ngcontent-ng-c4214895665 class="p-header">Accept payments on Website or APP</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c4214895665 class="col-lg-4 mt-2 bg-hover">
+                                                        <a _ngcontent-ng-c4214895665 href="/coming-soon.html">
+                                                            <div _ngcontent-ng-c4214895665 class="row my-2">
+                                                                <div _ngcontent-ng-c4214895665 class="col-2 col-md-2">
+                                                                    <img _ngcontent-ng-c4214895665 loading="lazy" alt="Navbar Icon" src="assets/images/header-image/instant-settlement_pg.svg">
+                                                                </div>
+                                                                <div _ngcontent-ng-c4214895665 class="col-10 col-md-10">
+                                                                    <h4 _ngcontent-ng-c4214895665 class="fs-14 m-0 fw-600">ONDC</h4>
+                                                                    <p _ngcontent-ng-c4214895665 class="p-header">Accept payments on Website or APP</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li _ngcontent-ng-c4214895665 class="nav-item">
+                                    <div _ngcontent-ng-c4214895665 class="popover__wrapper">
+                                        <a _ngcontent-ng-c4214895665 class="nav-link text-primary ml-md-2 ml-lg-3 ms-xl-5">Resources</a>
+                                        <div _ngcontent-ng-c4214895665 class="popover__content popover_sm_res_content">
+                                            <div _ngcontent-ng-c4214895665 id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" class="tab-pane fade active show text-left scroll-content">
+                                                <div _ngcontent-ng-c4214895665 class="row">
+                                                    <div _ngcontent-ng-c4214895665 class="col-lg-4 mt-2 bg-hover">
+                                                        <a _ngcontent-ng-c4214895665 href="/privacy-policy.html">
+                                                            <div _ngcontent-ng-c4214895665 class="row my-2">
+                                                                <div _ngcontent-ng-c4214895665 class="col-2 col-md-2">
+                                                                    <img _ngcontent-ng-c4214895665 loading="lazy" alt="Navbar Icon" src="assets/images/header-image/instant-settlement_pg.svg">
+                                                                </div>
+                                                                <div _ngcontent-ng-c4214895665 class="col-10 col-md-10">
+                                                                    <h4 _ngcontent-ng-c4214895665 class="fs-14 m-0 fw-600">privacy Policy</h4>
+                                                                    <p _ngcontent-ng-c4214895665 class="p-header">Accept payments on Website or APP</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c4214895665 class="col-lg-4 mt-2 bg-hover">
+                                                        <a _ngcontent-ng-c4214895665 href="/terms-condition.html">
+                                                            <div _ngcontent-ng-c4214895665 class="row my-2">
+                                                                <div _ngcontent-ng-c4214895665 class="col-2 col-md-2">
+                                                                    <img _ngcontent-ng-c4214895665 loading="lazy" alt="Navbar Icon" src="assets/images/header-image/instant-settlement_pg.svg">
+                                                                </div>
+                                                                <div _ngcontent-ng-c4214895665 class="col-10 col-md-10">
+                                                                    <h4 _ngcontent-ng-c4214895665 class="fs-14 m-0 fw-600">Terms &amp;Conditions</h4>
+                                                                    <p _ngcontent-ng-c4214895665 class="p-header">Accept payments on Website or APP</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li _ngcontent-ng-c4214895665 class="nav-item">
+                                    <a _ngcontent-ng-c4214895665 class="nav-link text-primary ml-md-2 ml-lg-3 ms-xl-5" href="/contact-us.html">Contact Us</a>
+                                </li>
+                            </ul>
+                            <!-- <div _ngcontent-ng-c4214895665 class="ml-2 ml-md-5">
+                                <a _ngcontent-ng-c4214895665 href="https://merchant.indiconnect.in/pages/login">
+                                    <button _ngcontent-ng-c4214895665 type="button" class="btn btn-primary br-11 fw-600 fs-14">Login / Sign Up</button>
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </nav>
+            </app-navbar>
+            <router-outlet _ngcontent-ng-c1232931054></router-outlet>
+            <app-home _nghost-ng-c2159516009 ngh="1">
+                <div _ngcontent-ng-c2159516009 class="container-fluid mt-5 pt-5 home-container-first">
+                    <div _ngcontent-ng-c2159516009 class="row">
+                        <div _ngcontent-ng-c2159516009 class="col-12 text-center">
+                            <h1 _ngcontent-ng-c2159516009 class="fw-700 text-white seamless-emp text-primary">
+                                Seamless Transactions, Empowering <br _ngcontent-ng-c2159516009>Business and Personal Finance 
+                            </h1>
+                            <p _ngcontent-ng-c2159516009 class="fs-18 fw-500 mt-2 mt-md-4 text-warning">Want to use Sphere Pay for?</p>
+                            <div _ngcontent-ng-c2159516009 class="mt-2 mt-md-4">
+                                <a _ngcontent-ng-c2159516009 href="/home.html">
+                                    <button _ngcontent-ng-c2159516009 type="button" class="btn btn-primary me-md-5 fw-500 fs-19 py-2 px-4 br-11">Businesses</button>
+                                </a>
+                                <a _ngcontent-ng-c2159516009 href="/home-sme.html">
+                                    <button _ngcontent-ng-c2159516009 type="button" class="btn btn-white fw-500 fs-18 py-2 px-4 br-11 text-primary">Co-operatives</button>
+                                </a>
+                            </div>
+                            <img _ngcontent-ng-c2159516009 loading="lazy" alt="Home Image" src="/assets/images/home-image/hero.webp" class="img-fluid top-first-image mt-3 mt-md-5">
+                        </div>
+                    </div>
+                </div>
+                <div _ngcontent-ng-c2159516009 class="container-fluid">
+                    <div _ngcontent-ng-c2159516009 class="row">
+                        <div _ngcontent-ng-c2159516009 class="col-12 col-lg-12">
+                            <h2 _ngcontent-ng-c2159516009 class="text-warning fw-500 fs-20 m-0 lh-base pl-2 pl-lg-5 ml-lg-5">Explore</h2>
+                            <h3 _ngcontent-ng-c2159516009 class="text-primary fw-700 m-0 pl-2 pl-lg-5 ml-lg-5 mt-1">Payment Gateway API</h3>
+                            <div _ngcontent-ng-c2159516009 class="card-swiper d-none d-md-block">
+                                <div _ngcontent-ng-c2159516009 class="swiper mySwiper">
+                                    <div _ngcontent-ng-c2159516009 class="swiper-wrapper">
+                                        <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                            <div _ngcontent-ng-c2159516009>
+                                                <h6 _ngcontent-ng-c2159516009 class="fw-600 fs-22 text-left mt-4">Payment Gateway</h6>
+                                                <div _ngcontent-ng-c2159516009 class="row">
+                                                    <div _ngcontent-ng-c2159516009 class="col-12 col-lg-4 d-flex justify-content-center">
+                                                        <a _ngcontent-ng-c2159516009 href="/payment-gateway.html">
+                                                            <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/payment-gateway.webp');">
+                                                                <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                                    <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Payment Gateway</h4>
+                                                                    <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c2159516009 class="col-12 col-lg-4 d-flex justify-content-center added-custom-width">
+                                                        <a _ngcontent-ng-c2159516009 href="/payment-links.html">
+                                                            <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/payment-links.webp');">
+                                                                <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                                    <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Payment Links</h4>
+                                                                    <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c2159516009 class="col-12 col-lg-4 d-flex justify-content-center">
+                                                        <a _ngcontent-ng-c2159516009 href="/payment-button.html">
+                                                            <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/payment-button.webp');">
+                                                                <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                                    <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Payment Button</h4>
+                                                                    <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <!---->
+                                                </div>
+                                            </div>
+                                            <!---->
+                                        </div>
+                                        <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                            <div _ngcontent-ng-c2159516009>
+                                                <h5 _ngcontent-ng-c2159516009 class="fw-600 fs-22 text-left"></h5>
+                                                <div _ngcontent-ng-c2159516009 class="row">
+                                                    <div _ngcontent-ng-c2159516009 class="col-12 col-lg-4 d-flex justify-content-center">
+                                                        <a _ngcontent-ng-c2159516009 href="/recurring-upi.html">
+                                                            <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/recurring-upi-img.webp');">
+                                                                <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                                    <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Recurring Payments - UPI</h4>
+                                                                    <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 pb-5 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c2159516009 class="col-12 col-lg-4 d-flex justify-content-center added-custom-width">
+                                                        <a _ngcontent-ng-c2159516009 href="/coming-soon.html">
+                                                            <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/enach.webp');">
+                                                                <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                                    <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">eNach</h4>
+                                                                    <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 pb-5 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c2159516009 class="col-12 col-lg-4 d-flex justify-content-center">
+                                                        <a _ngcontent-ng-c2159516009 href="/international-payment-gateway.html">
+                                                            <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/international-gateway.webp');">
+                                                                <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                                    <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">International Payment Gateway</h4>
+                                                                    <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 pb-5 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <!---->
+                                                </div>
+                                            </div>
+                                            <!---->
+                                        </div>
+                                        <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                            <div _ngcontent-ng-c2159516009>
+                                                <h6 _ngcontent-ng-c2159516009 class="fw-600 fs-22 text-left mt-4">Banking</h6>
+                                                <div _ngcontent-ng-c2159516009 class="row">
+                                                    <div _ngcontent-ng-c2159516009 class="col-12 col-lg-4 d-flex justify-content-center">
+                                                        <a _ngcontent-ng-c2159516009 href="/current-account.html">
+                                                            <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/current-account.webp');">
+                                                                <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                                    <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Current Account</h4>
+                                                                    <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 pb-5 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c2159516009 class="col-12 col-lg-4 d-flex justify-content-center added-custom-width">
+                                                        <a _ngcontent-ng-c2159516009 href="/multibank-account.html">
+                                                            <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/multibank-content.webp');">
+                                                                <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                                    <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Multibank Connect</h4>
+                                                                    <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 pb-5 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c2159516009 class="col-12 col-lg-4 d-flex justify-content-center">
+                                                        <a _ngcontent-ng-c2159516009 href="/virtual-account.html">
+                                                            <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/virtual-account.webp');">
+                                                                <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                                    <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Virtual Account</h4>
+                                                                    <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 pb-5 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <!---->
+                                                </div>
+                                            </div>
+                                            <!---->
+                                        </div>
+                                        <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                            <div _ngcontent-ng-c2159516009>
+                                                <h6 _ngcontent-ng-c2159516009 class="fw-600 fs-22 text-left"></h6>
+                                                <div _ngcontent-ng-c2159516009 class="row">
+                                                    <div _ngcontent-ng-c2159516009 class="col-12 col-lg-4 d-flex justify-content-center">
+                                                        <a _ngcontent-ng-c2159516009 href="/pay-out.html">
+                                                            <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/payout.webp');">
+                                                                <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                                    <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Payouts</h4>
+                                                                    <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 pb-5 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c2159516009 class="col-12 col-lg-4 d-flex justify-content-center added-custom-width">
+                                                        <a _ngcontent-ng-c2159516009 href="/upi-direct.html">
+                                                            <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/upi-direct-img.webp');">
+                                                                <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                                    <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">UPI Direct</h4>
+                                                                    <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 pb-5 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c2159516009 class="col-12 col-lg-4 d-flex justify-content-center">
+                                                        <a _ngcontent-ng-c2159516009 href="/coming-soon.html">
+                                                            <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/indigram.webp');">
+                                                                <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                                    <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">IndiGram</h4>
+                                                                    <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 pb-5 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <!---->
+                                                </div>
+                                            </div>
+                                            <!---->
+                                        </div>
+                                        <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                            <div _ngcontent-ng-c2159516009>
+                                                <h6 _ngcontent-ng-c2159516009 class="fw-600 fs-22 text-left mt-4">BizStack</h6>
+                                                <div _ngcontent-ng-c2159516009 class="row">
+                                                    <div _ngcontent-ng-c2159516009 class="col-12 col-lg-4 d-flex justify-content-center">
+                                                        <a _ngcontent-ng-c2159516009 href="/verification-services.html">
+                                                            <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/verification-service.webp');">
+                                                                <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                                    <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Verification Service</h4>
+                                                                    <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 pb-5 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c2159516009 class="col-12 col-lg-4 d-flex justify-content-center added-custom-width">
+                                                        <a _ngcontent-ng-c2159516009 href="/payroll.html">
+                                                            <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/payroll.webp');">
+                                                                <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                                    <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Payroll</h4>
+                                                                    <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 pb-5 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c2159516009 class="col-12 col-lg-4 d-flex justify-content-center">
+                                                        <a _ngcontent-ng-c2159516009 href="/coming-soon.html">
+                                                            <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/expense-management.webp');">
+                                                                <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                                    <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Expense Management</h4>
+                                                                    <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 pb-5 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <!---->
+                                                </div>
+                                            </div>
+                                            <!---->
+                                        </div>
+                                        <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                            <div _ngcontent-ng-c2159516009>
+                                                <h6 _ngcontent-ng-c2159516009 class="fw-600 fs-22 text-left"></h6>
+                                                <div _ngcontent-ng-c2159516009 class="row">
+                                                    <div _ngcontent-ng-c2159516009 class="col-12 col-lg-4 d-flex justify-content-center">
+                                                        <a _ngcontent-ng-c2159516009 href="/tax-payments.html">
+                                                            <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/tax-payments.webp');">
+                                                                <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                                    <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">TAX Payments</h4>
+                                                                    <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 pb-5 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c2159516009 class="col-12 col-lg-4 d-flex justify-content-center added-custom-width">
+                                                        <a _ngcontent-ng-c2159516009 href="/corporate-cards.html">
+                                                            <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/cards.webp');">
+                                                                <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                                    <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Corporate Prepaid Cards</h4>
+                                                                    <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 pb-5 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div _ngcontent-ng-c2159516009 class="col-12 col-lg-4 d-flex justify-content-center">
+                                                        <a _ngcontent-ng-c2159516009 href="/coming-soon.html">
+                                                            <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/ondc.webp');">
+                                                                <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                                    <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">ONDC</h4>
+                                                                    <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 pb-5 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <!---->
+                                                </div>
+                                            </div>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                    <div _ngcontent-ng-c2159516009 class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <div _ngcontent-ng-c2159516009 class="col-12 d-md-none px-0">
+                                <div _ngcontent-ng-c2159516009 class="mobile-swiper card-swiper">
+                                    <h6 _ngcontent-ng-c2159516009 class="fw-600 fs-22 text-left mt-4 mb-0">Payment Gateway</h6>
+                                    <div _ngcontent-ng-c2159516009 class="swiper mySwiperPaymentGateway">
+                                        <div _ngcontent-ng-c2159516009 class="swiper-wrapper">
+                                            <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                                <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/payment-gateway.webp');">
+                                                    <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                        <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Payment Gateway</h4>
+                                                        <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                                <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/payment-links.webp');">
+                                                    <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                        <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Payment Links</h4>
+                                                        <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                                <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/payment-button.webp');">
+                                                    <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                        <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Payment Button</h4>
+                                                        <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                                <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/recurring-upi-img.webp');">
+                                                    <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                        <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Recurring Payments - UPI</h4>
+                                                        <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                                <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/enach.webp');">
+                                                    <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                        <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">eNach</h4>
+                                                        <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                                <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/international-gateway.webp');">
+                                                    <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                        <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">International Payment Gateway</h4>
+                                                        <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div _ngcontent-ng-c2159516009 class="mobile-swiper card-swiper">
+                                    <h6 _ngcontent-ng-c2159516009 class="fw-600 fs-22 text-left mt-4 mb-0">Banking</h6>
+                                    <div _ngcontent-ng-c2159516009 class="swiper mySwiperPaymentGateway">
+                                        <div _ngcontent-ng-c2159516009 class="swiper-wrapper">
+                                            <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                                <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/current-account.webp');">
+                                                    <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                        <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Current Account</h4>
+                                                        <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                                <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/multibank-content.webp');">
+                                                    <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                        <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Multibank Connect</h4>
+                                                        <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                                <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/virtual-account.webp');">
+                                                    <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                        <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Virtual Account</h4>
+                                                        <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                                <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/payout.webp');">
+                                                    <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                        <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Payouts</h4>
+                                                        <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                                <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/upi-direct-img.webp');">
+                                                    <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                        <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">UPI Direct</h4>
+                                                        <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                                <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/indigram.webp');">
+                                                    <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                        <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">IndiGram</h4>
+                                                        <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div _ngcontent-ng-c2159516009 class="mobile-swiper card-swiper">
+                                    <h6 _ngcontent-ng-c2159516009 class="fw-600 fs-22 text-left mt-4 mb-0">BizStack</h6>
+                                    <div _ngcontent-ng-c2159516009 class="swiper mySwiperPaymentGateway">
+                                        <div _ngcontent-ng-c2159516009 class="swiper-wrapper">
+                                            <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                                <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/verification-service.webp');">
+                                                    <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                        <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Verification Service</h4>
+                                                        <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                                <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/payroll.webp');">
+                                                    <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                        <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Payroll</h4>
+                                                        <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                                <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/expense-management.webp');">
+                                                    <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                        <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Expense Management</h4>
+                                                        <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                                <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/tax-payments.webp');">
+                                                    <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                        <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">TAX Payments</h4>
+                                                        <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                                <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/cards.webp');">
+                                                    <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                        <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">Corporate Prepaid Cards</h4>
+                                                        <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div _ngcontent-ng-c2159516009 class="swiper-slide">
+                                                <div _ngcontent-ng-c2159516009 class="card custom-hover-card overflow-hidden" style="background-image: url('/assets/homepageimages/ondc.webp');">
+                                                    <div _ngcontent-ng-c2159516009 class="card-body text-left">
+                                                        <h4 _ngcontent-ng-c2159516009 class="fs-16 fw-600">ONDC</h4>
+                                                        <p _ngcontent-ng-c2159516009 class="fs-14 fw-400 text-muted m-0 description-text-mpc">Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div _ngcontent-ng-c2159516009 class="container-fluid my-md-5 my-3 top-third-div">
+                    <div _ngcontent-ng-c2159516009 class="row bg-primary py-3 py-md-5">
+                        <div _ngcontent-ng-c2159516009 class="col-lg-6 col-md-12 col-12">
+                            <div _ngcontent-ng-c2159516009 class="d-flex justify-content-center text-center">
+                                <p _ngcontent-ng-c2159516009 class="m-0">
+                                    <span _ngcontent-ng-c2159516009 class="text-warning fw-500 fs-23 lh-base">
+                                        Payments Made easy <br _ngcontent-ng-c2159516009>with 
+                                    </span>
+                                    <span _ngcontent-ng-c2159516009 class="text-white fw-700 fs-23">SpherePay API</span>
+                                </p>
+                            </div>
+                            <div _ngcontent-ng-c2159516009 class="d-flex justify-content-center">
+                                <img _ngcontent-ng-c2159516009 loading="lazy" alt="Group of Payment Methods" src="assets/images/home-image/Group.webp" class="img-fluid round-squre-image">
+                                <img _ngcontent-ng-c2159516009 loading="lazy" alt="Group of Payment Methods Icon" src="assets/images/home-image/Group_up.webp" class="img-fluid second-img mt-1">
+                            </div>
+                        </div>
+                        <div _ngcontent-ng-c2159516009 class="col-lg-6 col-md-12 col-12">
+                            <div _ngcontent-ng-c2159516009 class="mt-3 mx-1 mt-lg-5 mx-md-5">
+                                <h2 _ngcontent-ng-c2159516009 class="fw-700 text-warning display-5">
+                                    Get Started Fast, Accept <br _ngcontent-ng-c2159516009>Payment Faster. 
+                                </h2>
+                                <p _ngcontent-ng-c2159516009 class="fs-16 fw-500 text-white mt-2 mt-md-4">
+                                    Designed for entrepreneurial software developers, SpherePay<br _ngcontent-ng-c2159516009>
+                                    Developer Portal will help you Integrate Payment Gateway<br _ngcontent-ng-c2159516009>to your System. 
+                                </p>
+                                <!-- <div _ngcontent-ng-c2159516009 class="mt-3 mt-lg-4 btn-set">
+                                    <a _ngcontent-ng-c2159516009 href="https://merchant.indiconnect.in/pages/login?type=1" class="text-white">
+                                        <button _ngcontent-ng-c2159516009 type="button" class="btn btn-warning fs-16 fw-500 py-2 px-4 br-11">
+                                            Get Started <i _ngcontent-ng-c2159516009 aria-hidden="true" class="fa fa-arrow-right ms-3"></i>
+                                        </button>
+                                    </a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div _ngcontent-ng-c2159516009 class="my-5 card-div hover-card-div">
+                    <div _ngcontent-ng-c2159516009 class="justify-content-center">
+                        <p _ngcontent-ng-c2159516009 class="text-warning fs-20 lh-base fw-500 m-0 text-center">Form web Developers to App Developers</p>
+                        <h2 _ngcontent-ng-c2159516009 class="text-primary fw-700 m-0 text-center display-5">Made For Developers</h2>
+                    </div>
+                    <div _ngcontent-ng-c2159516009 class="container">
+                        <div _ngcontent-ng-c2159516009 class="row my-lg-4 justify-content-center d-flex align-content-center">
+                            <div _ngcontent-ng-c2159516009 class="col-lg-3 col-md-6 col-12 mt-md-0">
+                                <div _ngcontent-ng-c2159516009 class="card main-card">
+                                    <div _ngcontent-ng-c2159516009 class="card-body py-3 py-lg-4">
+                                        <h3 _ngcontent-ng-c2159516009 class="card-title fw-700">Documentation</h3>
+                                        <p _ngcontent-ng-c2159516009 class="card-text h-100 fs-14 fw-400 mt-2 text-overflow">Our Documentation is always up-to-date with latest technology and best-in-class examples.</p>
+                                        <h5 _ngcontent-ng-c2159516009 class="text-warning fw-500 fs-15 mt-lg-3">
+                                            View Docs <i _ngcontent-ng-c2159516009 aria-hidden="true" class="fa fa-angle-right ms-3"></i>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div _ngcontent-ng-c2159516009 class="col-lg-3 col-md-6 col-12 mt-2 mt-md-0">
+                                <div _ngcontent-ng-c2159516009 class="card main-card">
+                                    <div _ngcontent-ng-c2159516009 class="card-body py-3 py-lg-4">
+                                        <h3 _ngcontent-ng-c2159516009 class="card-title fw-700">API Sandbox</h3>
+                                        <p _ngcontent-ng-c2159516009 class="card-text h-100 fs-14 fw-400 mt-2 text-overflow">Try sandbox to check out our API in Action before you implement it in your favourite language.</p>
+                                        <h5 _ngcontent-ng-c2159516009 class="text-warning fw-500 fs-15 mt-3">
+                                            Try API <i _ngcontent-ng-c2159516009 aria-hidden="true" class="fa fa-angle-right ms-3"></i>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div _ngcontent-ng-c2159516009 class="col-lg-3 col-md-6 col-12 mt-2 mt-lg-0">
+                                <div _ngcontent-ng-c2159516009 class="card main-card">
+                                    <div _ngcontent-ng-c2159516009 class="card-body py-3 py-lg-4">
+                                        <h3 _ngcontent-ng-c2159516009 class="card-title fw-700">SDK</h3>
+                                        <p _ngcontent-ng-c2159516009 class="card-text h-100 fs-14 fw-400 mt-2 text-overflow">We got you covered with our extensive list of SDK for web and mobile Applications.</p>
+                                        <h5 _ngcontent-ng-c2159516009 class="text-warning fw-500 fs-15 mt-3">
+                                            Explore SDK <i _ngcontent-ng-c2159516009 aria-hidden="true" class="fa fa-angle-right ms-3"></i>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div _ngcontent-ng-c2159516009 class="col-lg-3 col-md-6 col-12 mt-2 mt-lg-0">
+                                <div _ngcontent-ng-c2159516009 class="card main-card">
+                                    <div _ngcontent-ng-c2159516009 class="card-body py-3 py-lg-4">
+                                        <h3 _ngcontent-ng-c2159516009 class="card-title fw-700">E-commerce Plugins</h3>
+                                        <p _ngcontent-ng-c2159516009 class="card-text h-100 fs-14 fw-400 mt-2 text-overflow">We understand you need to get started quick,that's why we got Plugins for Your platform of choice</p>
+                                        <h5 _ngcontent-ng-c2159516009 class="text-warning fw-500 fs-15 mt-3">
+                                            Get Plugins <i _ngcontent-ng-c2159516009 aria-hidden="true" class="fa fa-angle-right ms-3"></i>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div _ngcontent-ng-c2159516009 class="container-fluid pl-2 pl-lg-5 py-2 pt-md-4 pb-md-3 mb-4 bg-light">
+                    <div _ngcontent-ng-c2159516009 class="row ml-lg-5 mt-2 mt-lg-4">
+                        <div _ngcontent-ng-c2159516009 class="col-12 col-md-12 col-lg-6">
+                            <h5 _ngcontent-ng-c2159516009 class="text-warning fw-500">For Businesses of</h5>
+                            <h2 _ngcontent-ng-c2159516009 class="text-primary fw-700 display-5">All-In-One Banking Solution</h2>
+                            <p _ngcontent-ng-c2159516009 class="fs-16 fw-500 text-muted mt-3">Experience seamless digital banking, automated payments, accounting, bookkeeping, payroll, and GST services with SpherePay Banking – your all-in-one financial solution.</p>
+                            <div _ngcontent-ng-c2159516009 class="d-flex mt-3">
+                                <!-- <a _ngcontent-ng-c2159516009 href="https://play.google.com/store/apps/details?id=com.india.indiconnect">
+                                    <img _ngcontent-ng-c2159516009 loading="lazy" alt="Google Play Store Button" src="/assets/images/common-image/playstore.webp" class="apple-playstore cursor-pointer">
+                                </a> -->
+                            </div>
+                            <div _ngcontent-ng-c2159516009 class="d-lg-flex flex-column flex-md-row align-items-center mt-2 mt-md-5">
+                                <p _ngcontent-ng-c2159516009 class="m-0 fs-16 fw-600 text-dark">Learn more about our community in social</p>
+                                <a _ngcontent-ng-c2159516009 href="">
+                                    <img _ngcontent-ng-c2159516009 loading="lazy" alt="Facebook Icon" src="/assets/images/common-image/Facebook.webp" class="icons-image ml-3">
+                                </a>
+                                <a _ngcontent-ng-c2159516009 href="">
+                                    <img _ngcontent-ng-c2159516009 loading="lazy" alt="Linkedin Icon" src="/assets/images/common-image/Linkedin.webp" class="icons-image ml-1">
+                                </a>
+                                <a _ngcontent-ng-c2159516009 href="">
+                                    <img _ngcontent-ng-c2159516009 loading="lazy" alt="Youtube Icon" src="/assets/images/common-image/youtube.webp" class="icons-image ml-2 mt-1">
+                                </a>
+                                <a _ngcontent-ng-c2159516009 href="">
+                                    <img _ngcontent-ng-c2159516009 loading="lazy" alt="Instagram Icon" src="/assets/images/common-image/instagram.webp" class="icons-image ml-2">
+                                </a>
+                            </div>
+                        </div>
+                        <div _ngcontent-ng-c2159516009 class="col-12 col-md-12 col-lg-6 text-end pr-0">
+                            <img _ngcontent-ng-c2159516009 loading="lazy" alt="Business Banking Image" src="/assets/images/common-image/vs-six.webp" class="fifth-image-set">
+                        </div>
+                    </div>
+                </div>
+                <div _ngcontent-ng-c2159516009 class="container my-md-5 my-3">
+                    <div _ngcontent-ng-c2159516009 class="text-center">
+                        <h2 _ngcontent-ng-c2159516009 class="text-primary fw-700 m-0">How does SpherePay work?</h2>
+                    </div>
+                    <div _ngcontent-ng-c2159516009 class="d-flex justify-content-center row text-center">
+                        <div _ngcontent-ng-c2159516009 class="col-lg-4 col-md-4 mt-md-4 mt-3 card-1 position-relative">
+                            <div _ngcontent-ng-c2159516009 class="dash-line">
+                                <p _ngcontent-ng-c2159516009 class="stap-round1 stap-round2 bg-primary rounded-circle white fw-500 d-inline">1 </p>
+                            </div>
+                            <h4 _ngcontent-ng-c2159516009 class="text-primary mt-md-4 mt-2 fw-600">Get Registered</h4>
+                            <p _ngcontent-ng-c2159516009 class="text-warning fw-500 fs-16 mb-0">Sign up and share the basic business details and documents </p>
+                        </div>
+                        <div _ngcontent-ng-c2159516009 class="col-lg-4 col-md-4 mt-md-4 mt-2 card-1 position-relative">
+                            <div _ngcontent-ng-c2159516009 class="dash-line">
+                                <p _ngcontent-ng-c2159516009 class="stap-round bg-primary rounded-circle white fw-500 d-inline">2 </p>
+                            </div>
+                            <h4 _ngcontent-ng-c2159516009 class="text-primary mt-md-4 mt-2 fw-600">Complete KYC</h4>
+                            <p _ngcontent-ng-c2159516009 class="text-warning fw-500 fs-16 mb-0">Get the KYC done and start transacting with your online bank account with SpherePay </p>
+                        </div>
+                        <div _ngcontent-ng-c2159516009 class="col-lg-4 col-md-4 mt-md-4 mt-2 card-1 position-relative">
+                            <div _ngcontent-ng-c2159516009>
+                                <p _ngcontent-ng-c2159516009 class="stap-round bg-primary rounded-circle white fw-500 d-inline">3 </p>
+                            </div>
+                            <h4 _ngcontent-ng-c2159516009 class="text-primary mt-md-4 mt-2 fw-600 fs-34">Get Started</h4>
+                            <p _ngcontent-ng-c2159516009 class="text-warning fw-500 fs-16 mb-0">Start banking with the Virtual Accounts and manage the payments, reconciliation, and much more </p>
+                        </div>
+                    </div>
+                </div>
+                <app-partner-logo _ngcontent-ng-c2159516009 _nghost-ng-c3722189711 ngh="0">
+                    <div _ngcontent-ng-c3722189711 class="text-center">
+                        <p _ngcontent-ng-c3722189711 class="fw-500 fs-18 text-warning mb-0">OUR</p>
+                        <h2 _ngcontent-ng-c3722189711 class="fw-700 text-primary mb-0">Partners</h2>
+                    </div>
+                    <div _ngcontent-ng-c3722189711 class="py-4 py-md-5">
+                        <div _ngcontent-ng-c3722189711 class="swiper mySwiperLogo">
+                            <div _ngcontent-ng-c3722189711 class="swiper-wrapper">
+                                <div _ngcontent-ng-c3722189711 class="swiper-slide">
+                                    <img _ngcontent-ng-c3722189711 loading="lazy" alt="Yesbank Logo" src="assets/partner-logo/yesank.svg" class="filter-img">
+                                </div>
+                                <div _ngcontent-ng-c3722189711 class="swiper-slide">
+                                    <img _ngcontent-ng-c3722189711 loading="lazy" alt="IcICI Logo" src="assets/partner-logo/icici_bank.png" class="filter-img">
+                                </div>
+                                <div _ngcontent-ng-c3722189711 class="swiper-slide">
+                                    <img _ngcontent-ng-c3722189711 loading="lazy" alt="Axis Bank Logo" src="assets/partner-logo/axisbank.png" class="filter-img">
+                                </div>
+                                <div _ngcontent-ng-c3722189711 class="swiper-slide">
+                                    <img _ngcontent-ng-c3722189711 loading="lazy" alt="CAMSPay Logo" src="assets/partner-logo/CAMSPay.png" class="filter-img">
+                                </div>
+                                <div _ngcontent-ng-c3722189711 class="swiper-slide">
+                                    <img _ngcontent-ng-c3722189711 loading="lazy" alt="Nps Logo" src="assets/partner-logo/nps.png" class="filter-img">
+                                </div>
+                                <div _ngcontent-ng-c3722189711 class="swiper-slide">
+                                    <img _ngcontent-ng-c3722189711 loading="lazy" alt="Lyra Logo" src="assets/partner-logo/logo-lyra.svg" class="filter-img">
+                                </div>
+                                <div _ngcontent-ng-c3722189711 class="swiper-slide">
+                                    <img _ngcontent-ng-c3722189711 loading="lazy" alt="World Line Logo" src="assets/partner-logo/world_line.png" class="filter-img">
+                                </div>
+                                <div _ngcontent-ng-c3722189711 class="swiper-slide">
+                                    <img _ngcontent-ng-c3722189711 loading="lazy" alt="Digio Bank Logo" src="assets/partner-logo/digio.png" class="filter-img">
+                                </div>
+                                <div _ngcontent-ng-c3722189711 class="swiper-slide">
+                                    <img _ngcontent-ng-c3722189711 loading="lazy" alt="Progressive Bank Logo" src="assets/partner-logo/progressive_bank.png" class="filter-img">
+                                </div>
+                                <div _ngcontent-ng-c3722189711 class="swiper-slide">
+                                    <img _ngcontent-ng-c3722189711 loading="lazy" alt="Decentro Logo" src="assets/partner-logo/decentro.png" class="filter-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </app-partner-logo>
+            </app-home>
+            <!---->
+            <app-footer _ngcontent-ng-c1232931054 _nghost-ng-c3174313655 ngh="2">
+                <div _ngcontent-ng-c3174313655 class="container-fluid px-0">
+                    <div _ngcontent-ng-c3174313655 class="bg-primary">
+                        <div _ngcontent-ng-c3174313655 class="row pt-md-5 pt-4 pb-3 text-white px-lg-5 mx-lg-5 px-md-3 mx-md-3 px-2 mx-2">
+                            <div _ngcontent-ng-c3174313655 class="col-12">
+                                <div _ngcontent-ng-c3174313655 class="row">
+                                    <div _ngcontent-ng-c3174313655 class="col-lg-3 col-10">
+                                        <img _ngcontent-ng-c3174313655 loading="lazy" alt="SpherePay Logo" src="/assets/images/footer-image/indiconnect.png" class="logo-back img-fluid">
+                                        <!-- <div _ngcontent-ng-c3174313655 class="mt-3 mt-md-4">
+                                            <p _ngcontent-ng-c3174313655 class="fw-600 fs-16">Corporate Office :</p>
+                                            <p _ngcontent-ng-c3174313655 class="fs-14 fw-400">
+                                                Office No.412, Tower - 2,World Trade Center, Opp.<br _ngcontent-ng-c3174313655>EON IT Park, Kharadi, Pune, Maharashtra - 411014. 
+                                            </p>
+                                        </div> -->
+                                        <div _ngcontent-ng-c3174313655 class="mt-2 mt-md-4">
+                                            <p _ngcontent-ng-c3174313655 class="mb-0 fw-600 fs-16">
+                                                Email : <a _ngcontent-ng-c3174313655 href="mailto:support@spherepay.in" class="mb-0 fw-400 fs-14 cursor-pointer text-white">support@spherepay.in </a>
+                                            </p>
+                                            <p _ngcontent-ng-c3174313655 class="mb-0 fw-600 fs-16">
+                                                <!-- Phone : <a _ngcontent-ng-c3174313655 href="tel: +919201010130" class="mb-0 fw-400 fs-14 cursor-pointer text-white">+91 9201010130</a> -->
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div _ngcontent-ng-c3174313655 class="col-lg-9 col-12 cursor-pointer">
+                                        <div _ngcontent-ng-c3174313655 class="row ml-lg-5">
+                                            <div _ngcontent-ng-c3174313655 class="col-lg-3 col-md-4 col-12 mt-3 mt-lg-3 px-2 pl-lg-0 ml-lg-3">
+                                                <a _ngcontent-ng-c3174313655 href="/home.html">
+                                                    <h4 _ngcontent-ng-c3174313655 class="fw-700 text-white mb-3">Payment Gateway</h4>
+                                                </a>
+                                                <a _ngcontent-ng-c3174313655 href="/payment-gateway.html">
+                                                    <h4 _ngcontent-ng-c3174313655 class="fw-600 fs-14 text-light">Payment Gateway</h4>
+                                                </a>
+                                                <a _ngcontent-ng-c3174313655 href="/payment-links.html">
+                                                    <h4 _ngcontent-ng-c3174313655 class="fw-600 fs-14 text-light">Payments Links</h4>
+                                                </a>
+                                                <a _ngcontent-ng-c3174313655 href="/payment-button.html">
+                                                    <h4 _ngcontent-ng-c3174313655 class="fw-600 fs-14 text-light">Payments Button</h4>
+                                                </a>
+                                                <a _ngcontent-ng-c3174313655 href="/recurring-upi.html">
+                                                    <h4 _ngcontent-ng-c3174313655 class="fw-600 fs-14 text-light">Recurring Payments - UPI </h4>
+                                                </a>
+                                                <a _ngcontent-ng-c3174313655 href="/coming-soon.html">
+                                                    <h4 _ngcontent-ng-c3174313655 class="fw-600 fs-14 text-light">eNach</h4>
+                                                </a>
+                                                <a _ngcontent-ng-c3174313655 href="/international-payment-gateway.html">
+                                                    <h4 _ngcontent-ng-c3174313655 class="fw-600 fs-14 text-light">International Payment Gateway</h4>
+                                                </a>
+                                            </div>
+                                            <div _ngcontent-ng-c3174313655 class="col-lg-2 col-md-4 col-12 mt-3 mt-lg-3 px-2 ml-lg-5">
+                                                <a _ngcontent-ng-c3174313655 href="/home-sme.html">
+                                                    <h4 _ngcontent-ng-c3174313655 class="fw-700 text-white mb-3">Banking</h4>
+                                                </a>
+                                                <a _ngcontent-ng-c3174313655 href="/current-account.html">
+                                                    <h4 _ngcontent-ng-c3174313655 class="fw-600 fs-14 text-light">Current Account</h4>
+                                                </a>
+                                                <a _ngcontent-ng-c3174313655 href="/multibank-account.html">
+                                                    <h4 _ngcontent-ng-c3174313655 class="fw-600 fs-14 text-light">Multibank Account </h4>
+                                                </a>
+                                                <a _ngcontent-ng-c3174313655 href="/virtual-account.html">
+                                                    <h4 _ngcontent-ng-c3174313655 class="fw-600 fs-14 text-light">Virtual Account </h4>
+                                                </a>
+                                                <a _ngcontent-ng-c3174313655 href="/pay-out.html">
+                                                    <h4 _ngcontent-ng-c3174313655 class="fw-600 fs-14 text-light">Payouts</h4>
+                                                </a>
+                                                <a _ngcontent-ng-c3174313655 href="/upi-direct.html">
+                                                    <h4 _ngcontent-ng-c3174313655 class="fw-600 fs-14 text-light">UPI Direct</h4>
+                                                </a>
+                                                <a _ngcontent-ng-c3174313655 href="/coming-soon.html">
+                                                    <h4 _ngcontent-ng-c3174313655 class="fw-600 fs-14 text-light">IndiGram</h4>
+                                                </a>
+                                            </div>
+                                            <div _ngcontent-ng-c3174313655 class="col-lg-2 col-md-4 col-12 mt-3 mt-lg-3 px-2 ml-lg-5">
+                                                <h4 _ngcontent-ng-c3174313655 class="fw-700 text-white mb-3">BizStack</h4>
+                                                <a _ngcontent-ng-c3174313655 href="/verification-services.html">
+                                                    <h4 _ngcontent-ng-c3174313655 class="fw-600 fs-14 text-light">Verification Service </h4>
+                                                </a>
+                                                <a _ngcontent-ng-c3174313655 href="/payroll.html">
+                                                    <h4 _ngcontent-ng-c3174313655 class="fw-600 fs-14 text-light">Payroll</h4>
+                                                </a>
+                                                <a _ngcontent-ng-c3174313655 href="/coming-soon.html">
+                                                    <h4 _ngcontent-ng-c3174313655 class="fw-600 fs-14 text-light">Expense Management</h4>
+                                                </a>
+                                                <a _ngcontent-ng-c3174313655 href="/tax-payments.html">
+                                                    <h4 _ngcontent-ng-c3174313655 class="fw-600 fs-14 text-light">TAX Payments</h4>
+                                                </a>
+                                                <a _ngcontent-ng-c3174313655 href="/corporate-cards.html">
+                                                    <h4 _ngcontent-ng-c3174313655 class="fw-600 fs-14 text-light">Corporate Prepaid Cards </h4>
+                                                </a>
+                                                <a _ngcontent-ng-c3174313655 href="/coming-soon.html">
+                                                    <h4 _ngcontent-ng-c3174313655 class="fw-600 fs-14 text-light">ONDC</h4>
+                                                </a>
+                                            </div>
+                                            <div _ngcontent-ng-c3174313655 class="col-lg-2 col-md-4 col-12 mt-3 mt-lg-3 px-2 ml-lg-5">
+                                                <h4 _ngcontent-ng-c3174313655 class="fw-700 text-white mb-3">Resources</h4>
+                                                <a _ngcontent-ng-c3174313655 href="/privacy-policy.html">
+                                                    <h4 _ngcontent-ng-c3174313655 class="fw-600 fs-14 text-light">Privacy Policy</h4>
+                                                </a>
+                                                <a _ngcontent-ng-c3174313655 href="/terms-condition.html">
+                                                    <h4 _ngcontent-ng-c3174313655 class="fw-600 fs-14 text-light">Terms &amp;Conditions</h4>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div _ngcontent-ng-c3174313655 class="row pb-2 px-lg-5 mx-lg-5 px-md-3 mx-md-3 px-2 mx-2">
+                            <div _ngcontent-ng-c3174313655 class="col-lg-3 col-md-6 col-12 mt-2 mt-md-4">
+                                <div _ngcontent-ng-c3174313655 class="text-white fw-700 fs-18">
+                                    Connect with SpherePay on<br _ngcontent-ng-c3174313655>our socials
+                                </div>
+                                <div _ngcontent-ng-c3174313655 class="mt-3">
+                                    <a _ngcontent-ng-c3174313655 href="">
+                                        <img _ngcontent-ng-c3174313655 loading="lazy" alt="Facebook Icon" src="/assets/images/footer-image/face-book.svg" class="mr-3 cursor-pointer">
+                                    </a>
+                                    <a _ngcontent-ng-c3174313655 href="">
+                                        <img _ngcontent-ng-c3174313655 loading="lazy" alt="Linkedin Icon" src="/assets/images/footer-image/linkdien.png" class="mr-3 cursor-pointer social_icon">
+                                    </a>
+                                    <a _ngcontent-ng-c3174313655 href="">
+                                        <img _ngcontent-ng-c3174313655 loading="lazy" alt="Instagram Icon" src="/assets/images/footer-image/instagram.svg" class="mr-3 cursor-pointer">
+                                    </a>
+                                    <a _ngcontent-ng-c3174313655 href="">
+                                        <img _ngcontent-ng-c3174313655 loading="lazy" alt="Youtube Icon" src="/assets/images/footer-image/youtub.svg" class="mr-3 cursor-pointer">
+                                    </a>
+                                </div>
+                            </div>
+                            <div _ngcontent-ng-c3174313655 class="col-lg-5"></div>
+                            <div _ngcontent-ng-c3174313655 class="col-lg-4 col-md-6 col-12 mt-2 mt-md-5 justify-content-lg-end justify-content-center d-flex">
+                                <img _ngcontent-ng-c3174313655 loading="lazy" alt="SSL Secured Logo" src="/assets/images/footer-image/footerlogossl.svg" class="footer-logo img-fluid">
+                                <img _ngcontent-ng-c3174313655 loading="lazy" alt="PCI Logo" src="/assets/images/footer-image/footerlogodds.svg" class="footer-logo img-fluid ml-4">
+                            </div>
+                        </div>
+                        <!---->
+                        <!---->
+                        <div _ngcontent-ng-c3174313655 class="row pt-3 pb-4 px-lg-5 mx-lg-5 px-md-3 mx-md-3 px-2 mx-2 justify-content-center">
+                            <p _ngcontent-ng-c3174313655 class="copyright clearfix text-white m-0 fw-500 d-lg-flex fs-16">
+                                © 2024, SpherePay All Rights Reserved.<a _ngcontent-ng-c3174313655 href="" class="px-1"></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </app-footer>
+        </app-root>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js" async></script>
+        <script src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js" defer></script>
+        <script type="text/javascript">
+            (function(c, l, a, r, i, t, y) {
+                c[a] = c[a] || function() {
+                    (c[a].q = c[a].q || []).push(arguments)
+                }
+                ;
+                t = l.createElement(r);
+                t.async = 1;
+                t.src = "https://www.clarity.ms/tag/" + i;
+                y = l.getElementsByTagName(r)[0];
+                y.parentNode.insertBefore(t, y);
+            }
+            )(window, document, "clarity", "script", "lk5jcwxzbl");
+        </script>
+        <script src="polyfills-N6LQB2YD.js" type="module"></script>
+        <script src="main-WC7WH6ZP.js" type="module"></script>
+        <script id="ng-state" type="application/json">
+            {
+                "__nghData__": [
+                    {
+                    },
+                    {
+                        "e": {
+                            "28": 1,
+                            "36": 1,
+                            "43": 1,
+                            "51": 1,
+                            "58": 1,
+                            "66": 1
+                        },
+                        "t": {
+                            "34": "t0",
+                            "41": "t1",
+                            "49": "t2",
+                            "56": "t3",
+                            "64": "t4",
+                            "71": "t5",
+                            "80": "t6",
+                            "87": "t7",
+                            "94": "t8"
+                        },
+                        "c": {
+                            "34": [
+                                {
+                                    "i": "t0",
+                                    "r": 1,
+                                    "x": 3
+                                }
+                            ],
+                            "41": [
+                                {
+                                    "i": "t1",
+                                    "r": 1,
+                                    "x": 3
+                                }
+                            ],
+                            "49": [
+                                {
+                                    "i": "t2",
+                                    "r": 1,
+                                    "x": 3
+                                }
+                            ],
+                            "56": [
+                                {
+                                    "i": "t3",
+                                    "r": 1,
+                                    "x": 3
+                                }
+                            ],
+                            "64": [
+                                {
+                                    "i": "t4",
+                                    "r": 1,
+                                    "x": 3
+                                }
+                            ],
+                            "71": [
+                                {
+                                    "i": "t5",
+                                    "r": 1,
+                                    "x": 3
+                                }
+                            ],
+                            "80": [
+                                {
+                                    "i": "t6",
+                                    "r": 1,
+                                    "x": 6
+                                }
+                            ],
+                            "87": [
+                                {
+                                    "i": "t7",
+                                    "r": 1,
+                                    "x": 6
+                                }
+                            ],
+                            "94": [
+                                {
+                                    "i": "t8",
+                                    "r": 1,
+                                    "x": 6
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "t": {
+                            "99": "t9",
+                            "100": "t10"
+                        },
+                        "c": {
+                            "99": [
+                                {
+                                    "i": "t9",
+                                    "r": 1
+                                }
+                            ],
+                            "100": [
+                            ]
+                        }
+                    },
+                    {
+                        "c": {
+                            "1": [
+                                {
+                                    "i": "c2159516009",
+                                    "r": 1
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }</script>
+    </body>
+</html>

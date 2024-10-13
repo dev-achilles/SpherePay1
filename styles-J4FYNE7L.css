@@ -297,7 +297,7 @@ p {
 
 .btn-outline-primary:not(:disabled):not(.disabled):active,.btn-outline-primary:not(:disabled):not(.disabled).active,.show>.btn-outline-primary.dropdown-toggle {
     background-color: #857dd7!important;
-    color: #fff!important;
+    color: #8a0808!important;
 }
 
 .nav-pills .nav-link.active,.nav-pills .show>.nav-link {
